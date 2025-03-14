@@ -1,0 +1,16 @@
+# Generate token
+
+GET http://localhost:8080/auth/generate-token?username=admin@localhost.se
+
+###
+
+# Validate token
+
+GET http://localhost:8080/auth/validate-token?token=111df5fa-2962-44d8-b198-ba90d99f690f
+
+###
+
+# Get secure content
+
+GET http://localhost:8080/resource/secure
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBsb2NhbGhvc3Quc2UiLCJpYXQiOjE3NDE5ODMwOTIsImV4cCI6MTc0MjA2OTQ5Mn0.5Xr8oETOTvXLFIrCjV-WLtyfakbI4R6pJWKvjU_Fm28

@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: ott-login
+
+application:
+  jwt:
+    secret: ${JWT_SECRET:INsX8mr7OFSQPY+UnMktqfqVn760lxwVzKEJCB9//XE=}
+    expiration: ${JWT_EXPIRY_TIME:86400000}
